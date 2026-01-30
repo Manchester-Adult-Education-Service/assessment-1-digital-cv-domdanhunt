@@ -1,0 +1,60 @@
+img {
+    background-color: #3d5237;
+    padding: 20px;
+    display: block;
+    margin: auto;
+    width: 19%;
+}
+
+body {
+  background-color: lightcoral;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    color: #481818;
+    font-style: ;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+h2 {
+    color: #a83256;
+}
+
+h3 {
+    color: #a83256;
+}
+
+h4 {
+    color: #a83256;
+}
+
+h5 {
+    color: #a83256;
+}
+
+h6 {
+    color: #a83256;
+}
+
+p {
+    color: #496b80;
+}
+
+ol {
+    color: #496b80;
+    list-style-type: lower-roman;
+}
+
+ul {
+    color: #496b80;
+    list-style-type: circle;
+}
+
+a {
+    color: lightsteelblue;
+}
+
+
+
