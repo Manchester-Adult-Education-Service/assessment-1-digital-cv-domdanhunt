@@ -16,4 +16,4 @@ document.getElementById("copyright").textContent = `Copyright © ${year} Dominic
 const time = new Date().toLocaleTimeString();
 document.getElementById('time').textContent = time;
 
-console.log(time);
+document.getElementById('highlight').style.backgroundColor = blue 
