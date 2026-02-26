@@ -1,6 +1,7 @@
 const nameHeading = document.querySelector('h1');
 const hour = new Date().getHours();
 console.log("The current hour is: " + hour);
+
 if (hour < 12) {
     nameHeading.textContent = "Good Morning, Dominic";
 } else if (hour < 18) {
@@ -8,3 +9,11 @@ if (hour < 12) {
 } else {
     nameHeading.textContent = "Good Evening, Dominic"
 }
+
+const year = new Date().getFullYear();
+document.getElementById("copyright").textContent = `Copyright © ${year} Dominic`
+
+const time = new Date().toLocaleTimeString();
+document.getElementById('time').textContent = time;
+
+console.log(time);
