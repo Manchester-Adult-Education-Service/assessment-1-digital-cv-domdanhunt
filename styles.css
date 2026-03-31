@@ -1,3 +1,4 @@
+
 .hero-container {
     display: flex;
     justify-content: space-around;
@@ -5,7 +6,7 @@
     padding: 50px;
 }
 
-.contact-bar {
+.contact-bar  {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -23,9 +24,13 @@
 
 }
 nav {
-    background-color: #5c257d;
+    background-color:#153545;
+    list-style: none;
 }
 
+nav li {
+    list-style: none;
+}
 
 ul li:first-child {
     color: #5c257d;
@@ -46,6 +51,8 @@ body {
 header {
     background-color: #3d201d;
     text-align: center;
+    position: sticky;
+    top: 0;
 }
 
 main {
@@ -54,7 +61,11 @@ main {
 }
 
 footer {
-    background-color: #ef8c8c;
+    background-color: #153545;
+}
+
+.hero-container img {
+    border-radius: 100%;
 }
 
 img {
@@ -110,6 +121,11 @@ li {
 
 a {
     color: #6d95c8;
+}
+a:hover {
+    color: #e98181;
+    transition: transform .1s;
+    transform: scale(0.5);
 }
 
 
