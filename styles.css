@@ -64,3 +64,14 @@ a {
     padding: 15px;
     border-radius: 8px;
 }
+
+#hero-container img {
+    display: flex;
+    border-radius: 45px;
+
+}
+
+ul li:first-child {
+    color: #f0f0f0;
+
+}
