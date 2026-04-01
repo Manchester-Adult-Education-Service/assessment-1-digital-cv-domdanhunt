@@ -52,10 +52,14 @@ const quoteText = document.getElementById('quote-text')
 const quoteAuthor = document.getElementById('quote-author')
 
 quoteBtn.addEventListener('click', function() {
+    quoteText.textContent = `"Loading..."`
     fetch('https://dummyjson.com/quotes/random')
     .then(response => response.json())
     .then(data => {
         quoteText.textContent = `"${data.quote}"`;
         quoteAuthor.textContent = `-${data.author}`;
+    }) .catch (error => {
+        quoteText.textContent = "I couldn't connect to the server, I'm sorry! :-(";
+        quoteAuthor.textContent = "- Dominic";
     });
 });
