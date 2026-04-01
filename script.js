@@ -22,4 +22,11 @@ document.getElementById('time').textContent = time;
 
 document.getElementById('highlight').style.backgroundColor = blue;
 
-
+document.getElementById('theme-btn').addEventListener('click', function() {
+    if (document.body.style.backgroundColor) {
+        document.body.style.backgroundColor = #3E5641;
+        document.body.style.color = #F0F0F0;
+    } else {
+        document.body.style.color = #eca9a9
+    }
+});
