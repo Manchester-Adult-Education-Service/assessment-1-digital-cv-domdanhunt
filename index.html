@@ -1,69 +1,115 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
-    <title>Your Name – Digital CV</title>
+    <title>Dominic D. Hunt - Digital CV</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-    <h1>Your Full Name</h1>
-    <p>
-        Write a short personal statement here. Include what you are studying,
-        what you are interested in, and what you hope to do in the future.
-    </p>
-</header>
-
-<hr>
-
-<main>
-    <h2>Profile Photo</h2>
-    <img src="optional-image-link-here.jpg" alt="Professional profile photo">
-
+    <header>
+        <button id="theme-btn">Switch Theme</button>
+        <div class="hero-container">
+            <h1>Dominic<br>Daniel<br>Hunt</h1>
+            <img src="mebagpipes.jpg" alt="A photograph of myself in highland dress and a green tartan kilt, holding a set of great highland bagpipes" width="0px">
+            <p class="highlight">I am a motivated and enthusiastic lifelong learner, aiming to be a knock off Da Vinci Renaissance Man</p>
+        </div> 
+        <nav class="menu">
+            <a href="#anchor_home">Home</a>
+            <a href="#anchor_work">Work Experience</a>
+            <a href="#anchor_current">Current Education</a>
+            <a href="#anchor_previous">Previous Education</a>
+            <a href="#anchor_technical">Technical Skills</a>
+            <a href="#anchor_personal">Personal Interests</a>
+            <a href="#anchor_contact">Contact Information</a>
+        </nav>
+        
+    </header>
+    
     <hr>
+    
+    <main>
+        
+        <section id="workex">
+            <h2 id="anchor_work">Work Experience</h2>
+            <ul>
+                <li>Greater Manchester Combined Authority - Lived Experience Consultant</li>
+                <li>Caritas Diocese of Salford - Allotment Maintenance and Food Pantry Volunteer</li>
+                <li>City of Manchester Pipe Band - Music Tutor</li>
+                <li>Lass O'Gowrie Manchester - Bar Staff</li>
+                <li>The Bollin Fee Wilmslow - Bar Staff </li>
+                <li>Avici White Manchester - Bar Staff</li>
+                <li>Horizon Finance - Call Handler</li>
+            </ul>
+        </section>
+        <hr>
+        <section id="currented">
+            <h2 id="#anchor_current">Current Education</h2>
+            
+            <p>I am engaged in a software development course covering web development at MAES.</p>
+            <p>In this course we are covering 3 essential programming languages for web development.</p>
+            <p>I am also taking on additional studies around web accessibility.</p>
+            <h4>These are:</h4>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
+        <hr>
+        <section id="previoused">
+            <h2 id="#anchor_previous">Previous Education</h2>
 
-    <h2>Work Experience</h2>
-    <ul>
-        <li>Job Title – Company or Organisation</li>
-        <li>Voluntary Role or Project – Organisation</li>
-    </ul>
-
-    <hr>
-
-    <h2>Education</h2>
-    <ol>
-        <li>Qualification – Institution</li>
-        <li>Qualification – Institution</li>
-        <li>Qualification – Institution</li>
-    </ol>
-
-    <hr>
-
-    <h2>Technical Skills</h2>
-    <ul>
-        <li>Programming Languages
+            <ol>
+                <li>The Manchester College - BTEC Level 3 National Diploma (Art & Design - Photography)</li>
+                <li>Marple Hall High School - GCSE (Maths, English, Science, French, Drama)</li>
+                <li>Manchester Adult Education - Level 2 Certificate (Cybersecurity, Programming) </li>
+                <li>Manchester Adult Education - Level 1 Certificate (Programming)</li>
+            </ol>
+        </section>
+        <hr>
+        <section id="technicalsk">
+        <h2 id="#anchor_technical">Technical Skills</h2>
             <ul>
                 <li>Python</li>
                 <li>HTML</li>
                 <li>CSS</li>
-            </ul>
-        </li>
-        <li>Software Tools (e.g. GitHub, VS Code)</li>
-    </ul>
+                <li>JavaScript</li>
+                <li>GitHub</li>
+                <li>VS Code</li>
+                </ul>
+        </section>
+        <hr>
+        
+        <section id="personalst">
+            <h2 id="#anchor_personal">Personal Interests</h2>
+        </section>
+        <hr>
 
-    <hr>
+       <p id="#anchor_contact"></p>
+        <div class="contact-bar">
+            <h2">Contact Information</h2>
+            <p>
+                View my work on 
+                <a href="https://github.com/domdanhunt">GitHub</a>
+            </p>
+            <p>
+                Contact me by email:
+                <a href="mailto:792336@manadulted.ac.uk">Send Email</a>
+            </p>
+        </div>
+        <hr>
+        <section id="quote-container">
+            <h2>Daily Inspiration</h2>
+            <p id="quote-text">Click the button to load an inspiring quote!</p>
+            <p id="quote-author"><em>- Author</em></p>
+            <button id="quote-btn">Get New Quote</button>
+        <section>
+    </main>
+    <p id="time"></p>
 
-    <h2>Contact Information</h2>
-    <p>
-        View my work on 
-        <a href="https://github.com/your-username">GitHub</a>
-    </p>
-    <p>
-        Contact me by email:
-        <a href="mailto:your-email@example.com">Send Email</a>
-    </p>
-</main>
-
-<footer>
-    <p>Copyright © 2026 Your Name</p>
-</footer>
+    <footer id="copyright">
+    
+        <p>Copyright &copy; 2026 Dominic D Hunt</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
