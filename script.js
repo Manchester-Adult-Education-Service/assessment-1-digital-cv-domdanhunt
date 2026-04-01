@@ -35,9 +35,27 @@ const subTitles = document.querySelectorAll("h2");
 
 document.getElementById("theme-btn").addEventListener('click', function() {
     if (document.body.style.backgroundColor === "none") {
+        document.body.style.color = "#eca9a9";
+    } else {
         document.body.style.backgroundColor = "#3E5641";
         document.body.style.color = "#F0F0F0";
-    } else {
-        document.body.style.color = "#eca9a9";
+        mainContainer.style.backgroundColor = "#1e293b";
+        headerBar.style.backgroundColor = "#1e293b";
+        subTitles.forEach(subTitle => {
+            subTitle.style.color = "#f0f0f0"
+        });
     }
+});
+
+const quoteBtn = document.getElementById('quote-btn')
+const quoteText = document.getElementById('quote-text')
+const quoteAuthor = document.getElementById('quote-author')
+
+quoteBtn.addEventListener('click', function() {
+    fetch('https://dummyjson.com/quotes/random')
+    .then(response => response.json())
+    .then(data => {
+        quoteText.textContent = `"${data.quote}"`;
+        quoteAuthor.textContent = `-${data.author}`;
+    });
 });
